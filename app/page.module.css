@@ -11,43 +11,13 @@
   gap: 48px;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 80px 24px 60px;
+  padding: 28px 24px 48px;
 }
 
 /* ─── Hero Left ──────────────────────────────────── */
 .heroLeft {
   flex: 1;
   max-width: 560px;
-}
-
-.heroBadge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(37, 99, 235, 0.08);
-  border: 1px solid rgba(37, 99, 235, 0.2);
-  border-radius: 50px;
-  padding: 6px 16px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--blue-primary);
-  margin-bottom: 24px;
-}
-
-.badgeDot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--blue-primary);
-  animation: pulse 2s ease-in-out infinite;
-  flex-shrink: 0;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.75); }
 }
 
 .heroHeading {
@@ -185,7 +155,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  color: var(--blue-primary);
   flex-shrink: 0;
 }
 
@@ -222,8 +192,14 @@
   margin-bottom: 16px;
 }
 
-.mockPhoneEmoji {
-  font-size: 28px;
+.mockPhoneIcon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-primary);
+  flex-shrink: 0;
 }
 
 .mockPhoneName {
@@ -255,14 +231,25 @@
 
 .mockSpec {
   display: flex;
-  align-items: center;
-  gap: 6px;
+  flex-direction: column;
+  gap: 2px;
   background: white;
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 8px 12px;
-  font-size: 0.82rem;
+}
+
+.mockSpecLabel {
+  font-size: 0.68rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.mockSpecVal {
+  font-size: 0.85rem;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
@@ -331,7 +318,7 @@
   gap: 20px;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 24px 80px;
+  padding: 0 24px 60px;
 }
 
 .featureCard {
@@ -349,9 +336,18 @@
   border-color: rgba(37, 99, 235, 0.25);
 }
 
-.featureIcon {
-  font-size: 28px;
-  display: block;
+.featureIconLabel {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue-primary);
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  border-radius: 6px;
+  padding: 3px 9px;
   margin-bottom: 14px;
 }
 
@@ -368,11 +364,169 @@
   line-height: 1.55;
 }
 
+/* ─── Upcoming Phones — Real-Time Section ────────── */
+.upcomingSection {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+.upcomingInner {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(37, 99, 235, 0.14);
+  border-radius: 20px;
+  padding: 48px;
+  box-shadow:
+    0 8px 40px rgba(37, 99, 235, 0.08),
+    0 0 0 1px rgba(37, 99, 235, 0.05);
+  text-align: center;
+}
+
+.upcomingMeta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37, 99, 235, 0.06);
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  border-radius: 50px;
+  padding: 5px 14px;
+  margin-bottom: 20px;
+}
+
+.upcomingDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--blue-primary);
+  animation: livePulse 1.8s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes livePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.75); }
+}
+
+.upcomingLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue-primary);
+}
+
+.upcomingSectionTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+
+.upcomingSectionSub {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 36px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upcomingCard {
+  position: relative;
+  background: white;
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  border-radius: 16px;
+  padding: 32px 36px;
+  max-width: 520px;
+  margin: 0 auto;
+  box-shadow:
+    0 8px 32px rgba(37, 99, 235, 0.1),
+    0 0 0 1px rgba(37, 99, 235, 0.06);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  overflow: hidden;
+}
+
+.phoneVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.phoneHidden {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.upcomingCardHeader {
+  margin-bottom: 16px;
+}
+
+.upcomingTag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue-primary);
+  background: rgba(37, 99, 235, 0.07);
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  border-radius: 50px;
+  padding: 3px 12px;
+}
+
+.upcomingPhoneName {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { text-shadow: 0 0 0 transparent; }
+  50% { text-shadow: 0 0 18px rgba(37, 99, 235, 0.25); }
+}
+
+.upcomingPhoneStatus {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.upcomingPhonePrice {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--blue-primary);
+}
+
+.upcomingPulse {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.upcomingPlaceholder {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 16px 0;
+}
+
 /* ─── Responsive ─────────────────────────────────── */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    padding: 48px 20px 40px;
+    padding: 24px 20px 36px;
     text-align: center;
   }
 
@@ -398,5 +552,13 @@
 
   .pill1, .pill2 {
     display: none;
+  }
+
+  .upcomingInner {
+    padding: 32px 20px;
+  }
+
+  .upcomingCard {
+    padding: 24px 20px;
   }
 }

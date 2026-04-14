@@ -12,7 +12,7 @@ const STEPS = [
     label: 'The Basics',
     title: 'Core Specifications',
     description: 'Set your ideal ranges for price and fundamental smartphone specs.',
-    features: ['price', 'battery', 'screen', 'storage'],
+    features: ['price', 'battery', 'screen', 'storage', 'ram'],
     tip: null,
   },
   {
@@ -73,7 +73,7 @@ function Slider({ feature, value, onChange }) {
   return (
     <div className={styles.sliderGroup}>
       <div className={styles.sliderHeader}>
-        <span className={styles.sliderLabel}>{cfg.icon} {cfg.label}</span>
+        <span className={styles.sliderLabel}>{cfg.label}</span>
         <span className={styles.sliderValue}>{formatValue(feature, value)}</span>
       </div>
       <div className={styles.trackWrapper}>
@@ -111,9 +111,9 @@ function ResultCard({ item, type }) {
     premium: '#7c3aed',
   };
   const LABELS = {
-    perfect: '⭐ Perfect Match',
-    budget:  '💚 Budget Pick',
-    premium: '💜 Premium Upgrade',
+    perfect: 'Perfect Match',
+    budget:  'Budget Pick',
+    premium: 'Premium Upgrade',
   };
   const DELAYS = { perfect: 100, budget: 250, premium: 400 };
 
@@ -191,13 +191,12 @@ function ResultCard({ item, type }) {
       {/* Quick specs */}
       <div className={styles.specGrid}>
         {[
-          { icon: '🔋', val: `${item.phone.battery.toLocaleString()} mAh`, key: 'Battery' },
-          { icon: '📷', val: `${item.phone.camera} MP`,                    key: 'Camera' },
-          { icon: '💾', val: `${item.phone.storage} GB`,                   key: 'Storage' },
-          { icon: '🔌', val: `${item.phone.charging} W`,                   key: 'Charging' },
+          { val: `${item.phone.battery.toLocaleString()} mAh`, key: 'Battery' },
+          { val: `${item.phone.camera} MP`,                    key: 'Camera'  },
+          { val: `${item.phone.ram} GB`,                       key: 'RAM'     },
+          { val: `${item.phone.charging} W`,                   key: 'Charging'},
         ].map(spec => (
           <div key={spec.key} className={styles.specChip}>
-            <span className={styles.specIcon}>{spec.icon}</span>
             <span className={styles.specVal}>{spec.val}</span>
             <span className={styles.specKey}>{spec.key}</span>
           </div>
@@ -278,7 +277,6 @@ export default function PrecisionPick() {
             {/* Tip banner */}
             {currentStep.tip && (
               <div className={styles.tipBox}>
-                <span className={styles.tipIcon}>💡</span>
                 <p dangerouslySetInnerHTML={{ __html: currentStep.tip }} />
               </div>
             )}
@@ -305,7 +303,6 @@ export default function PrecisionPick() {
                         onChange={() => setDealbreaker(f)}
                         className={styles.dbRadio}
                       />
-                      <span className={styles.dbIcon}>{cfg.icon}</span>
                       <span className={styles.dbText}>{cfg.label}</span>
                       <span className={`${styles.dbCheck} ${checked ? styles.dbCheckActive : ''}`}>
                         {checked ? '✓' : ''}
@@ -330,7 +327,7 @@ export default function PrecisionPick() {
                   onClick={handleFind}
                   disabled={!dealbreaker}
                 >
-                  🔍 Find My Phone
+                  Find My Phone
                 </button>
               ) : (
                 <button className={styles.btnPrimary} onClick={() => setStep(s => s + 1)}>
@@ -344,7 +341,7 @@ export default function PrecisionPick() {
           /* ── Results ──────────────────────────────────────────── */
           <div className={styles.results}>
             <div className={styles.resultsHeader}>
-              <h2 className={styles.resultsTitle}>🎯 Your Top Matches</h2>
+              <h2 className={styles.resultsTitle}>Your Top Matches</h2>
               <p className={styles.resultsSub}>
                 Based on your preferences
                 {dealbreaker ? (
