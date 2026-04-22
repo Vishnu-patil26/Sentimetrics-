@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { href: '/',               label: 'Home' },
   { href: '/precision-pick', label: 'Precision Pick' },
   { href: '/compare',        label: 'Compare' },
-  { href: 'https://sentimetrics.zapier.app', label: 'AI Chatbot' },
+  { href: '/chatbot',        label: 'AI Chatbot' },
 ];
 
 export default function Header() {
