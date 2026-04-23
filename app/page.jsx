@@ -37,14 +37,13 @@ export default function Home() {
         <div className={styles.heroLeft}>
 
           <h1 className={styles.heroHeading}>
-            Buying made<br />
-            <span className={styles.headingAccent}>visually effortless.</span>
+            The decision engine<br />
+            <span className={styles.headingAccent}>for stunning mobile.</span>
           </h1>
 
           <p className={styles.heroSubtext}>
-            Skip the endless scrolling. Instantly discover the perfect smartphone
-            tailored to your exact needs, and compare your top choices side-by-side
-            with precision data.
+            Leverage advanced content-based filtering to discover the perfect smartphone.
+            No bias, no clutter—just precision data tailored to your lifestyle.
           </p>
 
           <div className={styles.heroActions}>
