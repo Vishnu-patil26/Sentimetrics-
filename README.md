@@ -50,6 +50,6 @@ Academic Year: 2025–26
 
 ## Media
 
-<!-- Failed to upload "Sentimetrics — Smart Mobile Recommendation Platform - Google Chrome 2026-04-23 21-40-13.mp4" -->
+https://github.com/user-attachments/assets/b36d1716-bb8c-400a-81c7-2171d28c593e
 
 (Screenshots and demo video will be added here)
