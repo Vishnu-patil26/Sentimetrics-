@@ -24,10 +24,10 @@ To develop a platform that evaluates user requirements and suggests suitable mob
 
 ## Project Team
 
-* Ritu Patil (Roll No. 5 | PRN: 202301640073677)
-* Damandeep Kaur Randhawa (Roll No. 12 | PRN: 2023016400732571)
-* Suruchi Rawat (Roll No. 16 | PRN: 2023016400732296)
-* Vishnu Patil (Roll No. 8 | PRN: 2022016402277477)
+* Ritu Patil 
+* Damandeep Kaur Randhawa 
+* Suruchi Rawat 
+* Vishnu Patil 
 
 ## Guidance
 
