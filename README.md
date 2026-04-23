@@ -1,4 +1,4 @@
-# Sentimetrics-
+# Sentimetrics-  Smartphone recommendation and Aspect Based Sentiment analysis
 
 ## Project Overview
 
