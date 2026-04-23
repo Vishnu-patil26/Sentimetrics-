@@ -52,4 +52,7 @@ Academic Year: 2025–26
 
 https://github.com/user-attachments/assets/b36d1716-bb8c-400a-81c7-2171d28c593e
 
-(Screenshots and demo video will be added here)
+## Screenshots (Experimental UI)
+
+The following screenshots showcase the experimental user interface developed during the project. These interfaces were designed and tested as part of the development process to explore different layouts, interaction flows, and visualization methods for improving the mobile phone recommendation experience.
+
