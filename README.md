@@ -48,6 +48,51 @@ Academic Year: 2025–26
 * Analysis of user behavior and preferences
 * Practical implementation of recommendation logic
 
+---
+
+## Technical Specifications
+
+The following outlines the core technical components and implementation details of the Sentimetrics system:
+
+### Architecture
+- Web-based client-server architecture  
+- Modular structure separating UI, logic, and data handling  
+
+### Frontend
+- Framework: Next.js / React  
+- Styling: CSS / Tailwind (if used)  
+- Responsive design for different screen sizes  
+- Component-based UI structure  
+
+### Backend
+- Node.js (if implemented)  
+- API handling for processing user inputs and generating recommendations  
+
+### Core Functionality
+- User input processing for preference collection  
+- Metric-based evaluation of mobile devices  
+- Comparative analysis engine for multiple device selection  
+- Structured recommendation logic  
+
+### Data Handling
+- Dataset-driven approach for mobile specifications  
+- Filtering and sorting based on user-defined criteria  
+- Efficient data mapping for comparison and results  
+
+### Deployment
+- Platform: Vercel  
+- Live URL: https://sentimetrics-alpha.vercel.app/  
+
+### Tools & Technologies
+- JavaScript  
+- Git & GitHub for version control  
+- Vercel for deployment  
+
+### Performance Considerations
+- Optimized rendering using modern frontend frameworks  
+- Lightweight UI for faster interaction  
+- Efficient data processing for quick recommendations  
+
 ## Media
 
 https://github.com/user-attachments/assets/b36d1716-bb8c-400a-81c7-2171d28c593e
