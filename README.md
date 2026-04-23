@@ -93,6 +93,8 @@ The following outlines the core technical components and implementation details 
 - Lightweight UI for faster interaction  
 - Efficient data processing for quick recommendations  
 
+
+
 ## Media
 
 https://github.com/user-attachments/assets/b36d1716-bb8c-400a-81c7-2171d28c593e
